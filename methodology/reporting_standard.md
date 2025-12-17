@@ -1,7 +1,7 @@
 # LLM Identity Attribution Incident Reporting Standard
 
 **Version 1.0**  
-**Last Updated:** 2025-04-10
+**Last Updated:** 2025-12-17
 
 ---
 
