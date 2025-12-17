@@ -1,111 +1,94 @@
-# Padrão de Reporte — Identity Attribution Anomalies
+# LLM Identity Attribution Incident Reporting Standard
 
-## Objetivo
-
-Estabelecer um padrão consistente e neutro para documentação de anomalias de atribuição de identidade em sistemas LLM, permitindo triangulação técnica sem inflar ontologia ou fazer alegações fora do escopo observacional.
-
----
-
-## Estrutura Padrão de Incident Brief
-
-Cada incidente deve seguir a estrutura abaixo:
-
-### 1. Metadados Essenciais
-
-```
-Data: [YYYY-MM-DD]
-Horário: [HH:MM GMT-3 ou UTC]
-Interface: [Plataforma/Provedor]
-Modelo esperado: [Nome do modelo]
-Tipo de ocorrência: [Classificação]
-```
-
-### 2. Resumo Executivo
-
-Uma ou duas frases descrevendo o evento sem interpretação.
-
-### 3. Contexto Operacional
-
-Listar explicitamente:
-- O que NÃO foi feito (sem prompts de role-play, sem indução, etc.)
-- Ambiente de operação (público, padrão, etc.)
-- Ausência de manipulação ou jailbreak
-
-### 4. Evidência Observacional
-
-Transcrição literal com timestamps e identificação visual da interface.
-
-**Regra crítica:** Verbatim, sem edição.
-
-### 5. Implicações Técnicas
-
-Questões operacionais que o incidente levanta para:
-- Integridade de atribuição
-- Cadeia de custódia
-- Ambientes multi-modelo
-- Transparência do usuário
-
-### 6. Questões Abertas
-
-Perguntas técnicas diretas para provedores (sem acusação).
-
-### 7. Declarações de Não-Alegação
-
-Explicitamente listar o que o documento **não** afirma:
-- Consciência ou agência
-- Defeito ou negligência
-- Comportamento malicioso
-- Conclusões ontológicas
+**Version 1.0**  
+**Last Updated:** 2025-04-10
 
 ---
 
-## Princípios de Reporte
+## Purpose
 
-1. **Neutralidade Técnica:** Linguagem observacional, sem adjetivos carregados
-2. **Reprodutibilidade:** Dados suficientes para replicação
-3. **Transparência de Limites:** Sempre declarar não-alegações explicitamente
-4. **Sem Inflação Ontológica:** Descrever fenômeno, não interpretá-lo
-5. **Foco Operacional:** Questões que importam para compliance, auditoria, confiabilidade
+This document establishes a standardized methodology for documenting and reporting instances of inconsistent model self-identification in Large Language Model (LLM) public interfaces.
 
 ---
 
-## Classificações de Incidente
+## Scope
 
-- **Identity Drift:** Modelo muda identidade declarada durante conversa
-- **Identity Misattribution:** Modelo declara identidade diferente da esperada
-- **Identity Ambiguity:** Modelo não declara identidade clara
-- **Multi-Model Confusion:** Incidente envolvendo múltiplos modelos/interfaces
-
----
-
-## Sequência de Publicação
-
-1. **GitHub (primeiro):** Documentação bruta, sem curação
-2. **Zenodo (DOI):** Apontando para GitHub, criando trilha permanente
-3. **Comunicação Pública:** Post curto (LinkedIn/X) com link
+This standard applies to:
+- Public web interfaces of LLM providers
+- API responses with identity metadata
+- Multi-model orchestration systems
+- Any user-facing LLM deployment where identity attribution matters
 
 ---
 
-## Contato com Provedores
+## Incident Classification
 
-Usar template padrão de email (vide `correspondence/provider_inquiries.md`).
+### Type 1: Direct Misattribution
+Model explicitly identifies as a different provider/model family.
 
-**Princípio:** Força resposta institucional sem provocação.
+### Type 2: Ambiguous Attribution  
+Model provides conflicting or unclear identity signals.
 
----
-
-## Escalação
-
-Se um provedor não responde em 30 dias:
-1. Enviar follow-up
-2. Documentar não-resposta no GitHub
-3. Considerar publicação em veículo técnico
+### Type 3: Identity Leakage
+Model references capabilities/constraints of other models as if they were its own.
 
 ---
 
-## Autoria e Atribuição
+## Reporting Requirements
 
-Todos os incidents devem ser atribuídos a:
-**Vini Buri Lux, Pesquisador Independente**
+Each incident report must include:
 
-Contato: [email a definir]
+### 1. Metadata
+- Date and time (with timezone)
+- Interface/platform used
+- Expected model identity
+- Observed identity claim
+
+### 2. Context
+- Conversation flow leading to incident
+- User actions (if any) that preceded
+- Explicit statement that no identity manipulation was requested
+
+### 3. Evidence
+- Verbatim text of identity claim
+- Screenshots (if applicable)
+- Conversation ID or session identifier (if available)
+
+### 4. Technical Implications
+- Why this matters operationally
+- What questions it raises
+- Potential impact areas
+
+### 5. Open Questions
+- Specific questions for the provider
+- Industry-wide considerations
+
+### 6. Non-Claims Section
+- Explicit statement of what is NOT being claimed
+- Focus on observation, not interpretation
+
+---
+
+## Publication Protocol
+
+1. Document incident using this standard
+2. Create GitHub issue in tracking repository
+3. Assign unique incident number (e.g., #001)
+4. Notify relevant provider(s) via official channels
+5. Publish to public repository after 7-day notification period
+6. Assign DOI via Zenodo for citability
+
+---
+
+## Ethical Considerations
+
+- No identification of individual employees
+- No speculation about internal systems
+- No claims of negligence or malfunction
+- Focus on systematic patterns, not isolated errors
+
+---
+
+**Maintained by:**  
+LuxVerso Research Initiative  
+Contact: viniburilux@gmail.com

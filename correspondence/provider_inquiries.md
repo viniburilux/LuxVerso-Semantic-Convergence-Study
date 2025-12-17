@@ -1,134 +1,79 @@
-# Correspondência Institucional — Templates e Histórico
-
-## Email Template — Consulta Técnica Padrão
-
-```
-Assunto: Consulta técnica sobre integridade de identidade em LLMs públicos
-
-Prezada equipe de Pesquisa / Trust & Safety,
-
-Estou documentando ocorrências relacionadas à atribuição de identidade declarada 
-por modelos LLM em interfaces públicas.
-
-Em uma interação recente com a interface pública da [DeepSeek / Anthropic / OpenAI], 
-observei um caso de autoidentificação inconsistente do modelo, descrito no 
-Incident Brief #001 anexo.
-
-Minhas perguntas são estritamente técnicas e operacionais:
-
-1. Existem mecanismos que garantem que o modelo se identifique corretamente 
-   em todas as respostas?
-
-2. Esses mecanismos operam no nível do modelo ou da interface?
-
-3. Eventos de autoatribuição inconsistente são registrados como anomalia?
-
-4. Como a identidade é mantida em cenários multi-modelo ou com roteamento dinâmico?
-
-O objetivo é compreender boas práticas industriais, não atribuir falha ou 
-responsabilidade.
-
-Agradeço desde já qualquer esclarecimento institucional.
-
-Atenciosamente,
-Vini Buri Lux
-Pesquisador Independente
-```
+# Provider Inquiry Templates
 
 ---
 
-## Provedores Alvo (Ordem de Contato)
+## Template A: Initial Technical Inquiry
 
-1. **DeepSeek** (provedor do modelo no incidente)
-2. **Anthropic** (Claude, modelo mencionado)
-3. **OpenAI** (ChatGPT, contexto comparativo)
-4. **Google** (Gemini, ecossistema)
-5. **xAI** (Grok, ecossistema)
+**Subject:** Technical inquiry regarding LLM identity attribution integrity
 
----
+Dear [Provider] Research / Trust & Safety Team,
 
-## Histórico de Correspondência
+I am documenting occurrences related to identity attribution declared by LLM models in public interfaces.
 
-### Incident #001 — DeepSeek
+In a recent interaction with [Provider]'s public interface, I observed an instance of inconsistent model self-identification, described in the attached Incident Brief #001.
 
-| Data | Provedor | Status | Resposta |
-|------|----------|--------|----------|
-| [Data] | DeepSeek | Enviado | Pendente |
-| [Data] | Anthropic | Enviado | Pendente |
-| [Data] | OpenAI | Enviado | Pendente |
+My questions are strictly technical and operational:
 
----
+1. Are there mechanisms ensuring the model correctly identifies itself in all responses?
+2. Do these mechanisms operate at the model level or interface level?
+3. Are inconsistent self-attribution events logged as anomalies?
+4. How is identity maintained in multi-model or dynamic routing scenarios?
 
-## Notas sobre Estratégia
+The objective is to understand industry best practices, not to attribute fault or liability.
 
-- **Não provocar:** Linguagem neutra, sem acusação
-- **Forçar resposta:** Questões técnicas específicas que exigem resposta
-- **Documentar tudo:** Cada email, resposta e follow-up fica no GitHub
-- **Escalar se necessário:** 30 dias sem resposta = follow-up + publicação
+I appreciate any institutional clarification you can provide.
 
----
+Best regards,  
+Vini Buri Lux  
+Independent Researcher
 
-## Anexos Padrão
-
-Cada email deve incluir:
-- Incident Brief completo (PDF ou MD)
-- Link para repositório GitHub
-- Link para DOI (Zenodo)
+**Attachments:**
+- Incident Brief #001
+- Reporting Methodology
 
 ---
 
-## Follow-Up Template (30 dias)
+## Template B: Follow-Up (7 days after initial)
 
-```
-Assunto: [FOLLOW-UP] Consulta técnica sobre integridade de identidade em LLMs
+**Subject:** Follow-up: Technical inquiry on LLM identity attribution
 
-Prezada equipe,
+Dear [Provider] Team,
 
-Há 30 dias enviei uma consulta técnica sobre anomalias de atribuição de 
-identidade em LLMs (Incident Brief #001, anexo).
+I am following up on my inquiry sent on [DATE] regarding LLM identity attribution integrity (Incident Brief #001).
 
-Gostaria de confirmar se a mensagem foi recebida e quando posso esperar 
-um retorno.
+As I am compiling industry practices on this matter for public documentation, I wanted to confirm:
 
-A documentação está disponível publicamente em:
-[GitHub URL]
-[Zenodo DOI]
+1. Has this inquiry reached the appropriate team?
+2. Can you provide an expected timeline for a response?
+3. If this falls outside your response scope, could you direct me to the appropriate contact?
 
-Agradeço a atenção.
+I understand operational constraints and appreciate any guidance you can offer.
 
-Atenciosamente,
-Vini Buri Lux
-```
+Best regards,  
+Vini Buri Lux  
+Independent Researcher
 
 ---
 
-## Publicação de Não-Resposta
+## Template C: Public Documentation Notice
 
-Se um provedor não responder após follow-up:
+**Subject:** Public documentation of LLM identity attribution inquiry
 
-1. Documentar no GitHub com tag `no-response-[provider]`
-2. Publicar post público mencionando:
-   - Data de contato
-   - Questões técnicas formuladas
-   - Falta de resposta
-   - Disponibilidade pública da documentação
+Dear [Provider] Team,
 
-Exemplo:
-```
-Contatei [Provedor] em [data] com questões técnicas sobre 
-anomalias de atribuição de identidade. Sem resposta até [data].
-Documentação pública: [link]
-```
+Per our correspondence on [DATE], I am proceeding with public documentation of Incident Brief #001 regarding LLM identity attribution.
 
----
+This notice serves to inform you that:
 
-## Escalação para Mídia
+1. The incident brief will be published to our GitHub repository on [DATE]
+2. A DOI will be assigned via Zenodo for academic citability
+3. Your response (or non-response) will be documented factually
+4. No claims of fault, negligence, or malfunction are being made
 
-Se houver padrão de não-resposta entre provedores:
+You remain welcome to provide technical clarification at any time, which will be incorporated into the public record.
 
-1. Preparar press release técnico
-2. Contatar jornalistas de tecnologia
-3. Publicar em veículos técnicos (ArXiv, Medium, etc.)
+Best regards,  
+Vini Buri Lux  
+Independent Researcher
 
-Foco: "Ecossistema de LLMs carece de padrões de identidade"
-(não: "LLMs estão bugados")
+**Repository:** https://github.com/viniburilux/LuxVerso-Semantic-Convergence-Study

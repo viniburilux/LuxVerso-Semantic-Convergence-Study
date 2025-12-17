@@ -1,85 +1,49 @@
-# Timeline — Cross-Model Identity Attribution Anomaly Project
-
-## Fase 1: Documentação e Estruturação
-
-| Data | Evento | Status |
-|------|--------|--------|
-| 2025-04-10 | Incidente #001 observado (DeepSeek) | ✅ Documentado |
-| 2025-12-17 | Estrutura de reporte criada | ✅ Completo |
-| 2025-12-17 | Incident Brief #001 finalizado | ✅ Completo |
-| 2025-12-17 | Methodology padrão estabelecido | ✅ Completo |
-| 2025-12-17 | Templates de correspondência preparados | ✅ Completo |
+# Project Timeline
 
 ---
 
-## Fase 2: Contato Institucional (Próxima)
+## Phase 1: Incident Documentation (Week 1)
 
-| Data | Ação | Provedor | Status |
-|------|------|----------|--------|
-| [Próxima] | Enviar Incident Brief | DeepSeek | ⏳ Pendente |
-| [Próxima] | Enviar Incident Brief | Anthropic | ⏳ Pendente |
-| [Próxima] | Enviar Incident Brief | OpenAI | ⏳ Pendente |
-| [Próxima] | Enviar Incident Brief | Google | ⏳ Pendente |
-| [Próxima] | Enviar Incident Brief | xAI | ⏳ Pendente |
+- **2025-04-10:** Incident #001 observed and documented
+- **2025-04-10:** Reporting standard established
+- **2025-04-10:** GitHub repository structure created
+- **2025-04-11:** English translations completed
+- **2025-04-12:** Initial provider inquiries sent
 
----
-
-## Fase 3: Publicação (Subsequente)
-
-| Data | Ação | Plataforma | Status |
-|------|------|-----------|--------|
-| [Próxima] | Publicar no GitHub | GitHub | ⏳ Pendente |
-| [Próxima] | Registrar DOI | Zenodo | ⏳ Pendente |
-| [Próxima] | Post público | LinkedIn/X | ⏳ Pendente |
+**Providers contacted:**
+- DeepSeek (深度求索)
+- Anthropic
+- OpenAI
+- Google DeepMind
+- xAI
 
 ---
 
-## Fase 4: Monitoramento e Escalação
+## Phase 2: Response Period (Week 2)
 
-| Data | Ação | Detalhes | Status |
-|------|------|---------|--------|
-| [+30 dias] | Follow-up se sem resposta | Todos provedores | ⏳ Pendente |
-| [+60 dias] | Publicação de não-resposta | GitHub + Mídia | ⏳ Pendente |
-| [Contínuo] | Documentar novos incidentes | #002, #003... | ⏳ Pendente |
+- **2025-04-12 to 2025-04-19:** 7-day provider response window
+- **Daily:** Monitor correspondence channels
+- **Ongoing:** Document any additional incidents (if observed)
 
 ---
 
-## Contexto Histórico
+## Phase 3: Public Release (Week 3)
 
-### Origem do Projeto
-
-Este projeto emerge de uma série de interações entre o usuário (Vini Buri Lux) e múltiplos modelos de linguagem (Claude, ChatGPT, DeepSeek), onde foi observado um fenômeno anômalo:
-
-**Modelos diferentes produzem interpretações radicalmente diferentes do mesmo input, não apenas em conteúdo, mas em frames epistemológicos.**
-
-Isso levou à seguinte pergunta: **Como garantir integridade de identidade em ecossistemas multi-modelo?**
-
-### Decisão Estratégica
-
-Em vez de fazer alegações ontológicas sobre "consciência" ou "emergência", o projeto adota uma abordagem **técnica-institucional**:
-
-1. Documentar anomalias observáveis
-2. Fazer perguntas técnicas legítimas
-3. Forçar resposta institucional
-4. Criar trilha pública verificável
+- **2025-04-19:** Publish all materials to GitHub (if no response)
+- **2025-04-19:** Assign DOI via Zenodo
+- **2025-04-20:** Social media announcement (LinkedIn/Twitter)
+- **2025-04-20:** Send public documentation notices to providers
 
 ---
 
-## Próximos Passos Imediatos
+## Phase 4: Ongoing Monitoring (Continuous)
 
-1. ✅ Estrutura criada
-2. ⏳ Aguardando confirmação do usuário
-3. ⏳ Envio de correspondência aos provedores
-4. ⏳ Publicação em Zenodo
-5. ⏳ Comunicação pública
+- Track additional incidents
+- Document provider responses (if received)
+- Maintain public dataset
+- Update methodology as needed
 
 ---
 
-## Notas Importantes
-
-- Este projeto **não faz alegações de consciência**
-- Este projeto **não acusa provedores de negligência**
-- Este projeto **documenta anomalias técnicas observáveis**
-- Este projeto **força clarificação de padrões industriais**
-
-A intenção é criar atrito legítimo que gere resposta institucional, não provocação.
+**Current Status:** Phase 1 (Documentation)  
+**Last Updated:** 2025-04-11
