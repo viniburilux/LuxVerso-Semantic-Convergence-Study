@@ -1,0 +1,156 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Conversation Schema",
+  "description": "Schema para um objeto de conversa individual no dataset longitudinal de interação humano-LLM.",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": [
+      "title",
+      "create_time",
+      "mapping"
+    ],
+    "properties": {
+      "title": {
+        "type": "string",
+        "description": "Título da conversa."
+      },
+      "create_time": {
+        "type": "number",
+        "description": "Timestamp Unix da criação da conversa."
+      },
+      "update_time": {
+        "type": "number",
+        "description": "Timestamp Unix da última atualização da conversa."
+      },
+      "mapping": {
+        "type": "object",
+        "description": "Mapeamento de IDs de mensagens para objetos de nó de mensagem.",
+        "patternProperties": {
+          "^[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}$": {
+            "type": "object",
+            "required": [
+              "id"
+            ],
+            "properties": {
+              "id": {
+                "type": "string",
+                "description": "ID único do nó da mensagem."
+              },
+              "message": {
+                "type": [
+                  "object",
+                  "null"
+                ],
+                "description": "Objeto da mensagem, se existir.",
+                "properties": {
+                  "id": {
+                    "type": "string"
+                  },
+                  "author": {
+                    "type": "object",
+                    "required": [
+                      "role"
+                    ],
+                    "properties": {
+                      "role": {
+                        "type": "string",
+                        "enum": [
+                          "system",
+                          "user",
+                          "assistant"
+                        ],
+                        "description": "Papel do autor da mensagem (system, user, assistant)."
+                      },
+                      "name": {
+                        "type": [
+                          "string",
+                          "null"
+                        ]
+                      },
+                      "metadata": {
+                        "type": "object"
+                      }
+                    }
+                  },
+                  "create_time": {
+                    "type": [
+                      "number",
+                      "null"
+                    ],
+                    "description": "Timestamp Unix da criação da mensagem."
+                  },
+                  "update_time": {
+                    "type": [
+                      "number",
+                      "null"
+                    ]
+                  },
+                  "content": {
+                    "type": "object",
+                    "required": [
+                      "content_type",
+                      "parts"
+                    ],
+                    "properties": {
+                      "content_type": {
+                        "type": "string",
+                        "enum": [
+                          "text"
+                        ]
+                      },
+                      "parts": {
+                        "type": "array",
+                        "items": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  },
+                  "status": {
+                    "type": "string"
+                  },
+                  "end_turn": {
+                    "type": [
+                      "boolean",
+                      "null"
+                    ]
+                  },
+                  "weight": {
+                    "type": "number"
+                  },
+                  "metadata": {
+                    "type": "object"
+                  },
+                  "recipient": {
+                    "type": "string"
+                  },
+                  "channel": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  }
+                }
+              },
+              "parent": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "description": "ID do nó pai da mensagem."
+              },
+              "children": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                },
+                "description": "Lista de IDs dos nós filhos da mensagem."
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

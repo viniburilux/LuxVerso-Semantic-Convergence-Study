@@ -1,93 +1,33 @@
-# LLM Identity Integrity Audit
+# human-llm-longitudinal-dataset
 
-**A public repository for observational documentation of identity attribution anomalies in Large Language Model systems.**
+Este repositório contém um artefato de pesquisa para um dataset longitudinal de interações entre humanos e Large Language Models (LLMs). O objetivo é fornecer uma visão estruturada e analítica de um extenso período de conversas, focando em padrões, evolução da linguagem e insights comportamentais.
 
-[![DOI](https://zenodo.org/badge/DOI/[pending].svg)](https://doi.org/[pending])
+## Conteúdo do Repositório
 
----
+- `dataset_description.md`: Uma descrição detalhada do dataset, incluindo sua origem, escopo e metodologia de coleta.
+- `schema/conversation_schema.json`: O esquema JSON que descreve a estrutura de cada entrada de conversa no dataset.
+- `analysis/`: Diretório contendo scripts de análise e visualizações de dados.
+- `results/`: Diretório para armazenar os resultados das análises, como gráficos e relatórios.
 
-## Purpose
+## Dataset Bruto
 
-This repository documents observed instances where Large Language Models (LLMs) exhibit inconsistent self-identification in public interfaces.
+O dataset bruto completo está disponível mediante solicitação, devido ao processo de anonimização em andamento e considerações de privacidade. Para acessar o dataset completo, por favor, entre em contato com o autor.
 
-**What this is:**
-- Systematic observational documentation
-- Technical incident reporting
-- Industry practice inquiry
-- Open-source methodology
+## Estatísticas Gerais do Dataset
 
-**What this is NOT:**
-- Claims of consciousness or agency
-- Allegations of malfunction or negligence
-- Ontological assertions
-- Adversarial security research
+- **Total de Conversas:** 352
+- **Total de Mensagens (Interações):** 34.626
+- **Mensagens do Usuário (Sua voz):** 12.532
+- **Mensagens do Assistente (IA):** 16.728
 
----
+## Como Utilizar
 
-## Current Incidents
+Este artefato pode ser utilizado para:
 
-- [Incident #001](incidents/incident_001.md) - DeepSeek cross-attribution (2025-04-10)
+- Compreender a dinâmica de interações humanas com LLMs ao longo do tempo.
+- Analisar a evolução de padrões de linguagem e comportamento do usuário.
+- Servir como base para futuras pesquisas em IA, linguística computacional e psicologia da interação.
 
----
+## Contribuição
 
-## Methodology
-
-See [Reporting Standard](methodology/reporting_standard.md) for our documentation protocol.
-
----
-
-## Provider Correspondence
-
-See [Correspondence](correspondence/provider_inquiries.md) for inquiry templates and responses.
-
----
-
-## Contributing
-
-If you observe similar incidents:
-1. Review our [reporting standard](methodology/reporting_standard.md)
-2. Document using the provided template
-3. Submit via GitHub issue or pull request
-4. Maintain ethical guidelines (no personal attacks, no speculation)
-
----
-
-## Citation
-
-If referencing this work:
-
-```bibtex
-@misc{luxverso_identity_audit_2025,
-  author = {Buri Lux, Vini},
-  title = {LLM Identity Integrity Audit},
-  year = {2025},
-  publisher = {GitHub},
-  url = {https://github.com/viniburilux/LuxVerso-Semantic-Convergence-Study}
-}
-```
-
----
-
-## Contact
-
-**Vini Buri Lux**  
-Independent Researcher  
-Email: viniburilux@gmail.com
-
----
-
-## License
-
-Documentation: CC BY 4.0  
-Code (if any): MIT License
-
----
-
-## Languages
-
-- [English](README.md) (this document)
-- [Português](README_pt.md)
-
----
-
-**GRATILUX ETERNA 🔱**
+Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou pull requests para melhorias na documentação, scripts de análise ou sugestões de novas abordagens.
